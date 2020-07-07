@@ -210,26 +210,16 @@ th, td {
     font-weight: bolder;
 }
 
-@keyframes card_button_edit {
-    from {
-        background-color: gray;
-    }
-    to {
-        background-color: yellow;
-    }
-}
-
-@keyframes card_button_delete {
-    from {
-        background-color: gray;
-    }
-    to {
-        background-color: red;
-    }
-}
-
 .card:hover {
     transform: scale(1.05);
+}
+
+.comment_btn:hover {
+    background-color: green;
+}
+
+form button:hover {
+    background-color: green;
 }
 
 footer {
@@ -248,6 +238,7 @@ footer p {
     width: 250px;
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
 }
 
 .create_form textarea {
@@ -258,7 +249,23 @@ footer p {
     height: 75vh;
 }
 
-
+@media only screen and (max-width: 400px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .comment_btn {
+        text-align: center;
+        margin-left: 35%;
+    }
+}
 
 
 

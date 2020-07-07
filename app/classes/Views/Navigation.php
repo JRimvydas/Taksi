@@ -3,7 +3,6 @@
 namespace App\Views;
 
 use App\App;
-use App\Users\User;
 
 class Navigation extends \Core\View
 {
@@ -30,11 +29,6 @@ class Navigation extends \Core\View
             $link['active'] = true;
         }
         $this->data[$section][] = $link;
-    }
-
-    public function add_admin_links()
-    {
-        $this->addLink('left', '/admin/products/admin.php', 'Admin');
     }
 
     public function render($path = ROOT . '/app/templates/navigation.php')

@@ -34,22 +34,6 @@ function validate_field_is_numeric($field_value, &$field): bool
 }
 
 /**
- * check name has space between first and last names
- * @param $field_value
- * @param $field
- * @return bool
- */
-function validate_field_name_has_space($field_value, &$field): bool
-{
-    if (!strpos(trim($field_value), " ")) {
-        $field['error'] = 'Vardas ir pavardė turi būti atskirti tarpu';
-        return false;
-    } else {
-        return true;
-    }
-}
-
-/**
  * Validate field number range
  *
  * @param $field_value

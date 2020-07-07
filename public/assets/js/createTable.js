@@ -17,7 +17,7 @@ export function createTable(dt) {
     const a = document.getElementById('link');
     if (!a){
         const addMore = createNode('button', {
-            class: 'button',
+            class: 'button comment_btn',
             name: 'action',
             click: () => createAddForm(table)
         }, 'Pridėti komentarą');

@@ -4,7 +4,7 @@ require_once '../bootloader.php';
 
 use App\App;
 
-if (App::$session->getUser()){
+if (App::$session->getUser()) {
     header('Location: index.php');
 }
 
@@ -23,6 +23,7 @@ function form_success(array &$form, array $form_values)
 
     header('Location: login.php');
 }
+
 $navigation = new \App\Views\Navigation();
 
 $forma = new \App\Views\Forms\Auth\RegistrationForm();
@@ -37,10 +38,8 @@ $forma->validate();
     <script src="assets/js/app.js" defer></script>
 </head>
 <body>
-
     <?php print $navigation->render(); ?>
     <h1>Registruotis</h1>
     <?php print $forma->render() ?>
-
 </body>
 </html>

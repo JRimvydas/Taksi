@@ -15,6 +15,13 @@ function html_attr(array $attr): string
     return $attributes;
 }
 
+
+/**
+ * get text area attributes
+ * @param string $field_id
+ * @param array $field
+ * @return string
+ */
 function textarea_attr(string $field_id, array $field){
     $attrs = [
         'name'=> $field_id,

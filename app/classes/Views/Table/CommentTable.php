@@ -2,7 +2,7 @@
 
 namespace App\Views\Table;
 
-use App\App;
+use App\Comments\Model;
 use Core\Views\Table;
 
 class CommentTable extends Table
@@ -26,7 +26,7 @@ class CommentTable extends Table
 
     public function getCommentData()
     {
-        $comments = \App\Comments\Model::getWhere([]);
+        $comments = Model::getWhere([]);
         $rows = [];
 
         foreach ($comments as $comm_key => $comment) {

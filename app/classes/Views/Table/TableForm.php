@@ -2,12 +2,8 @@
 
 namespace App\Views\Table;
 
-use App\Views\Forms\Drinks\BottleDeleteForm;
-use App\Bottles\Model;
-use Core\Views\Form;
 use Core\Views\Table;
-use Core\View;
-
+use App\Comments\Model;
 
 class TableForm extends Table
 {
@@ -30,7 +26,7 @@ class TableForm extends Table
 
     public function getTableData(): array
     {
-        $comments = \App\Comments\Model::getWhere([]);
+        $comments = Model::getWhere([]);
         $rows = [];
 
         foreach ($comments as $comment_key => $comment) {

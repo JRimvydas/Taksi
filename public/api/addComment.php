@@ -5,6 +5,12 @@ require '../../bootloader.php';
 use App\App;
 use App\Views\Forms\Comments\CommentForm;
 
+
+/**
+ * jei praeina formos validacija sukuriamas naujas komentaras ir irasomas i db
+ * @param array $form
+ * @param array $form_values
+ */
 function form_success(array &$form, array $form_values)
 {
     $comment = new \App\Comments\Comment($form_values);
@@ -15,6 +21,12 @@ function form_success(array &$form, array $form_values)
     print json_encode($comment);
 }
 
+
+/**
+ * fail atveju irasomas error message
+ * @param array $form
+ * @param array $form_values
+ */
 function form_fail(array &$form, array $form_values)
 {
     $form['message']['error'] = 'Komentaras yra tuščias';
