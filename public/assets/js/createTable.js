@@ -1,5 +1,6 @@
 import {createNode} from "./createNode.js";
 import {createTr} from "./createTr.js";
+import {createAddForm} from "./createAddForm.js";
 
 export function createTable(dt) {
     const divas = document.getElementById('app');
@@ -13,4 +14,16 @@ export function createTable(dt) {
         const tr = createTr(data);
         table.append(tr);
     })
+    const a = document.getElementById('link');
+    if (!a){
+        const addMore = createNode('button', {
+            class: 'button',
+            name: 'action',
+            click: () => createAddForm(table)
+        }, 'Pridėti komentarą');
+        divas.append(table);
+        divas.append(addMore);
+
+    }
+
 }

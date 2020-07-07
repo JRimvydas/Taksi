@@ -5,7 +5,7 @@ require_once '../bootloader.php';
 use App\Views\Navigation;
 
 $navigation = new Navigation();
-$form = new \App\Views\Forms\Comments\CommentForm()
+$form = new \App\Views\Forms\Comments\CommentForm();
 ?>
 <html lang="en">
 <head>
@@ -19,18 +19,21 @@ $form = new \App\Views\Forms\Comments\CommentForm()
 </head>
 <body>
 <?php print $navigation->render(); ?>
-<div class="wrapper">
+
     <main>
         <h1>Atsiliepimai</h1>
         <div id="app">
         </div>
         <?php if (\App\App::$session->getUser()): ?>
-            <?php print $form->render(); ?>
+            <!--            --><?php //print $form->render(); ?>
         <?php else: ?>
-        <a href="./register.php" class="button">Nori komentuoti ? Registruokis</a>
+            <a href="./register.php" class="button" id="link">Nori komentuoti ? Registruokis</a>
         <?php endif; ?>
-
+        <footer>
+            <p>© 2019. Rimvydas Jucius, all rights reserved</p>
+        </footer>
     </main>
-</div>
+
+
 </body>
 </html>

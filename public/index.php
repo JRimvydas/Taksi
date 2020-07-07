@@ -13,14 +13,14 @@ $navigation = new Navigation();
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sporto klubas</title>
+    <title>Taxi Kompanija</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <?php print $navigation->render(); ?>
 <main>
     <div class="header">
-        <h1>Sporto klubas</h1>
+        <h1>Taksi Kompanija</h1>
     </div>
     <div class="photo"></div>
     <div class="container">

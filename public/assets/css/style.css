@@ -51,7 +51,7 @@ h1 {
 .photo {
     width: 100%;
     height: 300px;
-    background-image: url("/assets/images/sports.jpg");
+    background-image: url("/assets/images/taxi_img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -243,14 +243,19 @@ footer p {
     margin-top: 30px;
 }
 
-.comment_form {
+.create_form {
     height: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
 }
 
-.comment_form textarea {
+.create_form textarea {
     resize: vertical;
+}
+
+#app {
+    height: 75vh;
 }
 
 
