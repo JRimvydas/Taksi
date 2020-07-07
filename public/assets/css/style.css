@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.left, .right {
+    display: flex;
+}
+
+.active > a {
+    color: white;
+}
+
+.wrapper_nav {
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.header {
+    height: 70px;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    background-image: url("/assets/images/sports.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    margin: 0 auto;
+    background-color: rgba(30, 30, 30, 0.4);
+    border-radius: 20px;
+    width: 25%;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+}
+
+label {
+    margin: 5px;
+}
+
+.error {
+    background-color: #990909;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.error_notification {
+    background-color: crimson;
+    margin: 10px;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#off {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 20px;
+    height: 15px;
+    background-color: gray;
+    border: 2px solid lightseagreen;
+    border-radius: 100%;
+}
+
+.success {
+    background-color: green;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.button {
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+table, th, tr {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 400px;
+}
+
+.card {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 380px;
+    box-shadow: 5px 8px lightgray;
+}
+
+.paslauga {
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paslauga1 {
+    background-image: url("/assets/images/paslauga_1.jpg");
+}
+
+.paslauga2 {
+    background-image: url("/assets/images/paslauga_2.jpg");
+}
+
+.paslauga3 {
+    background-image: url("/assets/images/paslauga_3.jpg");
+}
+
+.card h3 {
+    margin: 10px 5px;
+}
+
+.card p {
+    text-align: left;
+}
+
+.map {
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.map iframe {
+    height: 300px;
+    width: 100%;
+}
+
+.info {
+    margin-top: auto;
+    font-weight: bolder;
+}
+
+@keyframes card_button_edit {
+    from {
+        background-color: gray;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+@keyframes card_button_delete {
+    from {
+        background-color: gray;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    height: 70px;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+.comment_form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_form textarea {
+    resize: vertical;
+}
+
+
+
+
+
