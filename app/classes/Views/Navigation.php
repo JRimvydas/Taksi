@@ -11,14 +11,14 @@ class Navigation extends \Core\View
         parent::__construct($data);
 
         $this->addLink('left', '/', 'Titulinis');
-        $this->addLink('left', '/feedback.php', 'Atsiliepimai');
+        $this->addLink('left', '/feedback', 'Atsiliepimai');
         $user = App::$session->getUser();
 
         if ($user) {
-            $this->addLink('right', '/logout.php', "logout($user->email)");
+            $this->addLink('right', '/logout', "logout($user->email)");
         } else {
-            $this->addLink('right', '/login.php', 'Login');
-            $this->addLink('right', '/register.php', 'Register');
+            $this->addLink('right', '/login', 'Login');
+            $this->addLink('right', '/register', 'Register');
         }
     }
 
