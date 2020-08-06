@@ -10,9 +10,6 @@ define('DB_DATA', ROOT . '/app/data/db.json');
 require ROOT . '/core/functions/html.php';
 require ROOT . '/core/functions/validators.php';
 
-//App functions
-require ROOT . '/app/functions/validators.php';
-
 //Autoload all classes
 require ROOT . '/vendor/autoload.php';
 
